@@ -83,6 +83,8 @@
         }
 
         .input{
+            text-align: center;
+            font-size: 12px;
             color: white;
             background: #ED3100;
             border-radius: 20px;
@@ -102,7 +104,7 @@
         padding: 1em;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
-        grid-gap: 1em;
+        grid-gap: 3em;
         grid-template-areas:
 
         "bild1 bild1 text1 text1"
@@ -161,22 +163,26 @@
             grid-area: text11;
         }
 
+        .bilder{
+            margin-left: 5em;
+            width: 65%;
+        }
+
         .bild1{
-            height: 100%;
             grid-area: bild1;
         }
         
         .bild2{
-            height: 100%;
             grid-area: bild2;
         }
 
         .bild3{
-            height: 100%;
             grid-area: bild3;
         }
 
         .input{
+            text-align: center;
+            width: 25%;
             color: white;
             background: #ED3100;
             border-radius: 20px;

@@ -7,6 +7,18 @@ main{
     border-left: 25px solid red;
 
 
+    #jumbotron{
+        display: none;
+    }
+
+    #batman{
+        display: none;
+    }
+
+    #borja{
+        display: none;
+    }
+
     .jumbo{
         text-align: center;
         padding-bottom: 10%;
@@ -130,7 +142,7 @@ main{
     border-right: 25px solid red;
     border-left: 25px solid red;
 
-
+    
     .jumbo{
         text-align: center;
         padding-bottom: 10%;
@@ -201,7 +213,8 @@ main{
 
     .jumbo3{
         text-align: center;
-        padding-bottom: 10%;
+        padding-top: 10%;
+        padding-bottom: 3%;
 
         .pizzahut{
             max-width: 60px;
@@ -244,5 +257,8 @@ main{
                 cursor: pointer;
             }
         }
+    }
+    #fisk{
+        display: none;
     }
 }

@@ -508,6 +508,12 @@ main {
       border-bottom: 25px solid red;
       border-right: 25px solid red;
       border-left: 25px solid red; }
+      main #jumbotron {
+        display: none; }
+      main #batman {
+        display: none; }
+      main #borja {
+        display: none; }
       main .jumbo {
         text-align: center;
         padding-bottom: 10%; }
@@ -634,7 +640,8 @@ main {
       background: #ED3100; }
   .jumbo3 {
     text-align: center;
-    padding-bottom: 10%; }
+    padding-top: 10%;
+    padding-bottom: 3%; }
     .jumbo3 .pizzahut {
       max-width: 60px; }
   .jumbo4 .center {
@@ -661,7 +668,9 @@ main {
       display: inline-block;
       font-size: 16px;
       margin: 4px 2px;
-      cursor: pointer; } }
+      cursor: pointer; }
+  #fisk {
+    display: none; } }
 
 footer {
   grid-area: footer; }
@@ -687,6 +696,8 @@ footer {
 @supports (grid-area: auto) {
   /* Sub-grid */
   @media (max-width: 375px) {
+    #articles {
+      display: none; }
     .artiklar {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -729,6 +740,7 @@ footer {
   @media (min-width: 376px) {
     .artiklar {
       display: grid;
+      align-items: baseline;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
       grid-template-areas: "text1 icon1" "text1 arrow1" "text2 icon2" "text2 arrow2" "text3 icon3" "text3 arrow3" "text4 icon4";
@@ -780,7 +792,7 @@ footer {
     .grid-container {
       display: grid;
       padding: 1em;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-gap: 1em;
       grid-template-rows: auto; } } }
 
@@ -798,9 +810,9 @@ footer {
   @media (min-width: 376px) {
     .container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 50vh);
       grid-template-rows: auto;
-      grid-gap: 1em; } } }
+      justify-content: center; } } }
 
 @supports (grid-area: auto) {
   /* master-grid */
@@ -844,6 +856,8 @@ footer {
         height: 100%;
         grid-area: bild3; }
       .restaurantmenu-grid .input {
+        text-align: center;
+        font-size: 12px;
         color: white;
         background: #ED3100;
         border-radius: 20px; } } }
@@ -856,7 +870,7 @@ footer {
       padding: 1em;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto;
-      grid-gap: 1em;
+      grid-gap: 3em;
       grid-template-areas: "bild1 bild1 text1 text1" "bild1 bild1 text2 text2" "bild1 bild1 text3 text4"  "bild2 bild2 text5 text5" "bild2 bild2 text6 text6" "bild2 bild2 text7 text8"  "bild3 bild3 text9 text9" "bild3 bild3 text10 text10" "bild3 bild3 text11 text12"; }
       .restaurantmenu-grid .texteru1 {
         grid-area: text1; }
@@ -880,16 +894,18 @@ footer {
         grid-area: text10; }
       .restaurantmenu-grid #texteru11 {
         grid-area: text11; }
+      .restaurantmenu-grid .bilder {
+        margin-left: 5em;
+        width: 65%; }
       .restaurantmenu-grid .bild1 {
-        height: 100%;
         grid-area: bild1; }
       .restaurantmenu-grid .bild2 {
-        height: 100%;
         grid-area: bild2; }
       .restaurantmenu-grid .bild3 {
-        height: 100%;
         grid-area: bild3; }
       .restaurantmenu-grid .input {
+        text-align: center;
+        width: 25%;
         color: white;
         background: #ED3100;
         border-radius: 20px; } } }

@@ -3,6 +3,11 @@
     /* Sub-grid */
     @include respond-to("xsmall"){
 
+
+    #articles{
+        display: none;
+    }
+
     .artiklar{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -87,6 +92,7 @@
 
     .artiklar{
         display: grid;
+        align-items: baseline;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-template-areas: 
