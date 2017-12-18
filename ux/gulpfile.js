@@ -89,17 +89,11 @@ gulp.task('louis', function() {
     timeout: 60,
     url: 'http://localhost:3000',
     performanceBudget: {
-      requests: 10,
-      headersSize: 80,
-      cssSize: 19000,
-      jsSize: 2000,
-      consoleMessages: 3,
-      imageSize: 700000,
-      domContentLoaded: 2000,
-      smallestLatency: 1000,
-      medianLatency: 10,
-      slowestResponse: 1000,
-      timeToFirstImage: 700
+      requests: 79,
+      headersSize: 43437,
+      cssSize: 682335,
+      bodySize: 1728768,
+      imageSize: 1975382,
       
     }
   });
@@ -108,11 +102,12 @@ gulp.task('louis', function() {
 // Build Sequences
 // ---------------
 
-gulp.task('default', function(callback) {
-  runSequence(['sass', 'browserSync'], 'watch',
-    callback
-  )
-})
+gulp.task('default', ['louis']);
+gulp.task('default', function (callback) {
+    runSequence(['sass', 'browserSync', "louis"], 'watch',
+        callback
+    );
+});
 
 gulp.task('build', function(callback) {
   runSequence(
