@@ -137,11 +137,12 @@ main{
 }
 
 @include respond-to("large"){
+    main{
     padding-top: 5%;
-    border-bottom: 25px solid red;
     border-right: 25px solid red;
     border-left: 25px solid red;
-
+    border-bottom: 25px solid red;
+    }
     
     .jumbo{
         text-align: center;

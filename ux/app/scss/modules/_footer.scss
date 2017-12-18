@@ -1,3 +1,17 @@
+@include respond-to("xsmall"){
+
+footer{
+    display: none;
+}
+}
+
+
+@include respond-to("large"){
+
 footer{
     grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    background: #2C2C29;
+}
 }

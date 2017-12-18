@@ -35,6 +35,7 @@
     "run-sequence": "2.2.0"
   },
   "devDependencies": {
-    "gulp-louis": "^2.4.0"
+    "gulp-louis": "^2.4.0",
+    "gulp-util": "^3.0.8"
   }
 }
