@@ -6,7 +6,9 @@ main{
     border-right: 25px solid red;
     border-left: 25px solid red;
 
-
+    #doldBild{
+        display: none;
+    }
     #jumbotron{
         display: none;
     }
@@ -223,23 +225,24 @@ main{
     }
     
     .jumbo4{
+        text-align: center;
         
-        .center{
-            text-align: center;
-            padding-top: 10%;
-        }
-
         #kontaktaoss{
             padding-top: 0;
             padding-bottom: 10%;
         }
-
+        .kontaktKnapp{
+            display:flex;
+            justify-content: center;
+        
         .rounded{
+            display: block;
             background: #ED3100;
             border-radius: 5px;
             border: none;
             cursor: pointer;
             color: white;
+            }
         }
 
         .group{
