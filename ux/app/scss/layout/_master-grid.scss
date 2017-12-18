@@ -1,0 +1,32 @@
+@supports (grid-area: auto){
+    
+    /* master-grid */
+    @include respond-to("xsmall"){
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 40vh auto;
+        grid-template-areas: 
+        "header"
+        "main";
+    }
+}
+}
+
+@supports (grid-area: auto){
+    
+    /* master-grid */
+    @include respond-to("large"){
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 35vh auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+}
+}

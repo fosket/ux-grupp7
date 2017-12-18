@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoFaJo</title>
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css">
+  <!--endbuild-->
+</head>
+
+<body>
+
+<div class="grid">
+<!--Navigation-->
+  <header>
+    <div class="flex">
+    <img src="/images/RoFaJo1.gif" alt="RoFoJo cover picture" class="rofajo-img">
+    <p class="rofajo">RoFaJo</p>
+    </div>
+    <a class="toggle" href="#nav">&#9776</a>
+    <nav id="nav" role="navigation">  
+    <a class="toggle close" href="#">×</a>
+    <ul>
+        <li><a href="populära.html">Populära Restauranger</a></li>
+        <li><a href="omoss.html">Om oss</a></li>
+        <li><a href="kontakt.html">Kontakta oss</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main>
+      <div class="jumbo4">
+        <h2 class="center" id="kontaktaoss">Kontakta oss!</h2>
+        <h2>Om du är en kund</h2>
+        <form>
+            Namn:<br>
+            <input type="text" name="Namn"><br>
+            Epost:<br>
+            <input type="text" name="Epost"><br>
+            Order-id:<br>
+            <input type="text" name="Order-id"><br>
+            Fråga:<br>
+            <textarea rows="4" cols="25" name="Fråga" form="usrform">
+            </textarea>
+            <input type="submit" class="rounded">
+          </form>
+
+        <h2>Om du driver en Restaurang</h2>
+        <form>
+            Namn:<br>
+            <input type="text" name="Namn"><br>
+            Epost:<br>
+            <input type="text" name="Epost"><br>
+            <br>
+            Fråga:<br>
+            <textarea rows="4" cols="25" name="Fråga" form="usrform">
+            </textarea>
+            <input type="submit" class="rounded">
+          </form>
+
+        <h2 class="center">Gå till startsidan</h2>
+        <div class="group">
+        <a href="börja.html"><input type="button" class="button" value="Avsluta"></a>
+        </div>
+      </div>
+  </main>
+</div>
+<!--build:js js/main.min.js -->
+<script src="js/lib/a-library.js"></script>
+<script src="js/lib/another-library.js"></script>
+<script src="js/main.js"></script>
+<!-- endbuild -->
+
+</body>
+
+</html>

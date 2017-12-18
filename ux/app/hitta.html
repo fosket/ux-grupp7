@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoFaJo</title>
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css">
+  <!--endbuild-->
+</head>
+
+<body>
+
+<div class="grid">
+<!--Navigation-->
+  <header>
+    <div class="flex">
+    <img src="/images/RoFaJo1.gif" alt="RoFoJo cover picture" class="rofajo-img">
+    <p class="rofajo">RoFaJo</p>
+    </div>
+    <a class="toggle" href="#nav">&#9776</a>
+    <nav id="nav" role="navigation">  
+    <a class="toggle close" href="#">×</a>
+    <ul>
+      <li><a href="populära.html">Populära Restauranger</a></li>
+      <li><a href="omoss.html">Om oss</a></li>
+      <li><a href="kontakt.html">Kontakta oss</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main>
+      <div class="jumbo2">
+          <h2>Hitta Restaurang</h2>
+          <p class="margin">Beställ mat från över 600 av <br>Sveriges bästa Restauranger!</p>
+          <div class="sökruta">
+          <input type="text" class="söken" name="searchbar" placeholder="Ange Restaurang namn, ort eller matkategori"><input type="submit" id="sök" class="söken" value="Visa Restauranger">
+          </div>
+        </div>
+        <div class="grid-container">
+            <a href="specific.html"><img src="/images/pizza.jpg"></a>
+            <img src="/images/pizza.jpg">
+            <img src="/images/pizza.jpg">
+            <img src="/images/pizza.jpg">
+        </div>
+  </main>
+</div>
+<!--build:js js/main.min.js -->
+<script src="js/lib/a-library.js"></script>
+<script src="js/lib/another-library.js"></script>
+<script src="js/main.js"></script>
+<!-- endbuild -->
+
+</body>
+
+</html>

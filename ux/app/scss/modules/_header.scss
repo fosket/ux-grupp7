@@ -1,0 +1,122 @@
+/*Styling header*/
+
+/*General Styling*/
+header {
+  grid-area: header;
+  background-image: url("/images/hero.jpg");
+  background-size: cover;
+  background-repeat: none;
+
+  nav {
+    background-color: #2C2C29;
+  
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      color: map-get($color, bright);
+      font-size:25px;
+    }
+  }
+  
+}
+
+
+
+/*Navigation xsmall*/
+@include respond-to("xsmall") { /*using my own breakingpoint variable from breakingpoints map*/
+#nav { /*creating off-canvas menu*/
+  transition: transform .3s ease-in-out;
+  top: 0;
+  bottom: 0;   
+  min-height: 100vh; /*overrides Safari bug*/
+  position: fixed; /*makes it possible to scroll behind the nav*/
+  width: 300px;
+  left: -340px;
+  max-width: 60em;
+  padding-top: 1.5em;
+  z-index: 999; /*places the navigation at the front*/
+}
+#nav:target {     
+  transform: translateX(340px);
+}
+.toggle {
+  color: map-get($color, bright); /*styling bars icon*/
+  font-size:25px;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 30px;
+
+}
+.close {
+  text-align: right;
+  display: block;
+  text-decoration: none;
+  font-size: 3em;
+  position: relative;
+  top: -30px;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 8em;
+
+  .rofajo{
+    color: white;
+    font-size: 30px;
+  }
+
+  .rofajo-img{
+    max-width: 60px;
+}
+}
+
+}
+
+/*Navigation Desktop & Tablet*/
+@include respond-to("large") { /*using breakpoint variables from breakpoints map*/
+.toggle {
+  display: none; /*hides bars icon on desktop & tablet*/
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 8em;
+
+  .rofajo{
+    color: white;
+    font-size: 30px;
+  }
+
+  .rofajo-img{
+    max-width: 60px;
+}
+}
+
+nav {
+  background-color: map-get($color, dark); /*nav color is changed on desktop & tablet*/
+
+  ul{
+    display: flex;
+    justify-content: center;
+
+    li{
+      padding: 0 20px 0 0;
+
+      a{
+        font-size: 30px; /*nav font-size is changed on desktop & tablet*/
+
+        &:hover{
+          color: map-get($color, accent2);
+        }
+      }
+    }
+  }
+}
+}

@@ -1,0 +1,27 @@
+@supports (grid-area: auto){
+    
+    /* master-grid */
+    @include respond-to("xsmall"){
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em;
+    }
+}
+}
+
+@supports (grid-area: auto){
+    
+    /* master-grid */
+    @include respond-to("large"){
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em;
+    }
+}
+}

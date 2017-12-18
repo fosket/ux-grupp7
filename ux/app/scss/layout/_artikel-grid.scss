@@ -1,0 +1,163 @@
+@supports (grid-area: auto){
+    
+    /* Sub-grid */
+    @include respond-to("xsmall"){
+
+    .artiklar{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+
+        "text1 icon1"
+        "text1 arrow1"
+        "text2 icon2"
+        "text2 arrow2"
+        "text3 icon3"
+        "text3 arrow3"
+        "text4 icon4";
+        padding: 1.5em;
+        justify-items: center;
+
+        .texts{
+            padding-top: 10%;
+        }
+
+        .text1{
+            grid-area: text1;
+        }
+
+        .text2{
+            grid-area: text2;
+        }
+
+        .text3{
+            grid-area: text3;
+        }
+
+        .text4{
+            grid-area: text4;
+        }
+
+        .icons{
+            max-width: 60px;
+            margin-bottom: 25px;
+
+            .icon1{
+                grid-area: icon1;
+            }
+            
+            .icon2{
+                grid-area: icon2;
+            }
+
+            .icon3{
+                grid-area: icon3;
+            }
+
+            .icon4{
+                grid-area: icon4;
+            }
+        }
+
+        .arrows{
+            max-width: 30px;
+        
+            .arrow1{
+                grid-area: arrow1;
+            }
+            
+            .arrow2{
+                grid-area: arrow2;
+            }
+            
+            .arrow3{
+                grid-area: arrow3;
+            }
+        }
+        
+    }
+}
+}
+
+@supports (grid-area: auto){
+    
+    /* Sub-grid */
+    @include respond-to("large"){
+
+    .artiklar{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+
+        "text1 icon1"
+        "text1 arrow1"
+        "text2 icon2"
+        "text2 arrow2"
+        "text3 icon3"
+        "text3 arrow3"
+        "text4 icon4";
+        padding: 1.5em;
+        justify-items: center;
+
+        .texts{
+            padding-top: 10%;
+        }
+
+        .text1{
+            grid-area: text1;
+        }
+
+        .text2{
+            grid-area: text2;
+        }
+
+        .text3{
+            grid-area: text3;
+        }
+
+        .text4{
+            grid-area: text4;
+        }
+
+        .icons{
+            max-width: 60px;
+            margin-bottom: 25px;
+
+            .icon1{
+                grid-area: icon1;
+            }
+            
+            .icon2{
+                grid-area: icon2;
+            }
+
+            .icon3{
+                grid-area: icon3;
+            }
+
+            .icon4{
+                grid-area: icon4;
+            }
+        }
+
+        .arrows{
+            max-width: 30px;
+        
+            .arrow1{
+                grid-area: arrow1;
+            }
+            
+            .arrow2{
+                grid-area: arrow2;
+            }
+            
+            .arrow3{
+                grid-area: arrow3;
+            }
+        }
+        
+    }
+}
+}

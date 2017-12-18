@@ -1,0 +1,248 @@
+main{
+    grid-area: main;
+    @include respond-to("xsmall"){
+    padding-top: 5%;
+    border-bottom: 25px solid red;
+    border-right: 25px solid red;
+    border-left: 25px solid red;
+
+
+    .jumbo{
+        text-align: center;
+        padding-bottom: 10%;
+
+        .button{
+            background: #ED3100;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            padding: 15px 60px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .mellanrum{
+            margin-bottom: 1em;
+        }
+    }
+
+    .jumbo2{
+        text-align: center;
+        padding-top: 15%;
+
+        .margin{
+            margin-bottom: 1.3em;
+        }
+
+        .button2{
+            border: none;
+            color: white;
+            padding: 15px;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 85%;
+        }
+    
+        .border{
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+    }
+
+    #spec1{
+        background: #3B5998;
+    }
+
+    #spec2{
+        background: #ED3100;
+    }
+
+    .sökruta{
+        margin-top: 1.5em;
+
+    .söken{
+        padding: 0.2em;
+    }
+
+    #sök{
+        color: white;
+        border: 1px solid #ED3100;
+        background: #ED3100;
+    }
+    }
+
+    .jumbo3{
+        text-align: center;
+        padding-bottom: 10%;
+
+        .pizzahut{
+            max-width: 60px;
+        }
+    }
+    
+    .jumbo4{
+        
+        .center{
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        #kontaktaoss{
+            padding-top: 0;
+            padding-bottom: 10%;
+        }
+
+        .rounded{
+            background: #ED3100;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+
+        .group{
+            text-align: center;
+
+            .button{
+                background: #ED3100;
+                border: none;
+                border-radius: 20px;
+                color: white;
+                padding: 15px 60px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+}
+
+@include respond-to("large"){
+    padding-top: 5%;
+    border-bottom: 25px solid red;
+    border-right: 25px solid red;
+    border-left: 25px solid red;
+
+
+    .jumbo{
+        text-align: center;
+        padding-bottom: 10%;
+
+        .button{
+            background: #ED3100;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            padding: 15px 60px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .mellanrum{
+            margin-bottom: 1em;
+        }
+    }
+
+    .jumbo2{
+        text-align: center;
+        padding-top: 15%;
+
+        .margin{
+            margin-bottom: 1.3em;
+        }
+
+        .button2{
+            border: none;
+            color: white;
+            padding: 15px;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 85%;
+        }
+    
+        .border{
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+    }
+
+    #spec1{
+        background: #3B5998;
+    }
+
+    #spec2{
+        background: #ED3100;
+    }
+
+    .sökruta{
+        margin-top: 1.5em;
+
+    .söken{
+        padding: 0.2em;
+    }
+
+    #sök{
+        color: white;
+        border: 1px solid #ED3100;
+        background: #ED3100;
+    }
+    }
+
+    .jumbo3{
+        text-align: center;
+        padding-bottom: 10%;
+
+        .pizzahut{
+            max-width: 60px;
+        }
+    }
+    
+    .jumbo4{
+        
+        .center{
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        #kontaktaoss{
+            padding-top: 0;
+            padding-bottom: 10%;
+        }
+
+        .rounded{
+            background: #ED3100;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+
+        .group{
+            text-align: center;
+
+            .button{
+                background: #ED3100;
+                border: none;
+                border-radius: 20px;
+                color: white;
+                padding: 15px 60px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,186 @@
+@supports (grid-area: auto){
+    
+    /* master-grid */
+    @include respond-to("xsmall"){
+
+    .restaurantmenu-grid{
+        display: grid;
+        padding: 1em;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        grid-template-areas:
+
+        "bild1 bild1 text1 text1"
+        "bild1 bild1 text2 text2"
+        "bild1 bild1 text3 text4"
+        
+        "bild2 bild2 text5 text5"
+        "bild2 bild2 text6 text6"
+        "bild2 bild2 text7 text8"
+        
+        "bild3 bild3 text9 text9"
+        "bild3 bild3 text10 text10"
+        "bild3 bild3 text11 text12";
+
+        .texteru1{
+            grid-area: text1;
+        }
+
+        .texteru2{
+            grid-area: text2;
+        }
+
+        .texteru3{
+            grid-area: text3;
+        }
+
+        #texteru4{
+            grid-area: text4;
+        }
+
+        .texteru5{
+            grid-area: text5;
+        }
+
+        .texteru6{
+            grid-area: text6;
+        }
+
+        .texteru7{
+            grid-area: text7;
+        }
+
+        #texteru8{
+            grid-area: text8;
+        }
+
+        .texteru9{
+            grid-area: text9;
+        }
+
+        .texteru10{
+            grid-area: text10;
+        }
+
+        #texteru11{
+            grid-area: text11;
+        }
+
+        .bild1{
+            height: 100%;
+            grid-area: bild1;
+        }
+        
+        .bild2{
+            height: 100%;
+            grid-area: bild2;
+        }
+
+        .bild3{
+            height: 100%;
+            grid-area: bild3;
+        }
+
+        .input{
+            color: white;
+            background: #ED3100;
+            border-radius: 20px;
+        }
+    }
+}
+}
+
+
+@supports (grid-area: auto){
+    
+    /* master-grid */
+    @include respond-to("large"){
+
+    .restaurantmenu-grid{
+        display: grid;
+        padding: 1em;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        grid-template-areas:
+
+        "bild1 bild1 text1 text1"
+        "bild1 bild1 text2 text2"
+        "bild1 bild1 text3 text4"
+        
+        "bild2 bild2 text5 text5"
+        "bild2 bild2 text6 text6"
+        "bild2 bild2 text7 text8"
+        
+        "bild3 bild3 text9 text9"
+        "bild3 bild3 text10 text10"
+        "bild3 bild3 text11 text12";
+
+        .texteru1{
+            grid-area: text1;
+        }
+
+        .texteru2{
+            grid-area: text2;
+        }
+
+        .texteru3{
+            grid-area: text3;
+        }
+
+        #texteru4{
+            grid-area: text4;
+        }
+
+        .texteru5{
+            grid-area: text5;
+        }
+
+        .texteru6{
+            grid-area: text6;
+        }
+
+        .texteru7{
+            grid-area: text7;
+        }
+
+        #texteru8{
+            grid-area: text8;
+        }
+
+        .texteru9{
+            grid-area: text9;
+        }
+
+        .texteru10{
+            grid-area: text10;
+        }
+
+        #texteru11{
+            grid-area: text11;
+        }
+
+        .bild1{
+            height: 100%;
+            grid-area: bild1;
+        }
+        
+        .bild2{
+            height: 100%;
+            grid-area: bild2;
+        }
+
+        .bild3{
+            height: 100%;
+            grid-area: bild3;
+        }
+
+        .input{
+            color: white;
+            background: #ED3100;
+            border-radius: 20px;
+        }
+    }
+}
+}
